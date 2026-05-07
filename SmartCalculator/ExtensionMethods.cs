@@ -8,7 +8,7 @@ namespace SmartCalculator
     {
         public static bool IsOperator(this char chr)
         {
-            return chr == '-' || chr == '+' || chr == '/' || chr == '*' ? true : false;
+            return chr == '-' || chr == '+' || chr == '/' || chr == '*' || chr=='^'? true : false;
         }
     }
 }

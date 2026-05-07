@@ -14,10 +14,12 @@ namespace SmartCalculator
 
         }
 
-        public void Use()
+        public string Use()
         {
             string answer = Console.ReadLine();
-            Parser.Instance.Parse(answer);
+            double result=Parser.Instance.DistributionAndParseValuseWithAnswer(answer);
+            return result.ToString();
+            
 
         }
 
