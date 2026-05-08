@@ -24,12 +24,16 @@ namespace SmartCalculator
                 case '*': result = left * right; break;
                 case '/': result = left / right; break;
                 case '^':
-                    result = left;
-                    for (int i=1; i<right; i++)
+                    result = right==0?1:left;
+                    if (right != 0)
                     {
-                        
-                        result*= left;
+                        for (int i = 1; i < right; i++)
+                        {
+
+                            result *= left;
+                        }
                     }
+                    
                     break;
                     
                     
