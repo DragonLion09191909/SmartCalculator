@@ -17,16 +17,18 @@ namespace SmartCalculator
         public string Use()
         {
             string answer = Console.ReadLine();
-            double result=Parser.Instance.DistributionAndParseValuseWithAnswer(answer);
+            double result=Parser.Instance.Parse(answer);
             return result.ToString();
             
 
         }
-
         
 
-        
 
-        
+
+
+
+
+
     }
 }
